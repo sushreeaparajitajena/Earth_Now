@@ -1,0 +1,133 @@
+.footer-container {
+  position: relative;
+  background-color: #020025;
+  color: white;
+  padding: 12rem 3rem 3rem;
+  text-align: center;
+  overflow: hidden;
+ 
+}
+
+.footer-gradient-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #9a00ff 0%, transparent 60%);
+  transform: translateX(-50%);
+  z-index: 0;
+  opacity: 0.7;
+  filter: blur(50px);
+}
+
+.footer-content {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-logo-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding-bottom: 50px;
+  position: relative;
+  margin-top: -12rem;
+}
+
+.footer-logo-top img {
+  max-width: 200px;
+  height: auto;
+}
+.footer-logo-top img:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.footer-heading {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  flex-wrap: wrap;
+}
+
+.footer-button p {
+  font-weight: 600;
+  justify-content: center;
+  color: #cfcfcf;
+}
+
+.circle-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #cfcfcf;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.circle-btn:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+.footer-bottom {
+  margin-top: 4rem;
+  border-top: 1px solid #3a3a5a;
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 1;
+}
+
+.social-icons {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icons svg {
+  cursor: pointer;
+  color: #cfcfcf;
+  transition: color 0.3s ease;
+}
+
+.social-icons svg:hover {
+  color: #9a00ff;
+}
+
+.footer-links {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  margin: 0 1rem;
+  color: #cfcfcf;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .footer-buttons {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

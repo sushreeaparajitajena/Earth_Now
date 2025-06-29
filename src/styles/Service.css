@@ -1,0 +1,136 @@
+/* Overall Services Section */
+.services-section {
+  background: none;
+  padding-bottom: 60px;
+  text-align: center;
+  position: relative;
+}
+
+.image-banner {
+  background-image: url('../assets/Service/service.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Header */
+.overlay-text {
+  padding: 80px 20px 0;
+  position: relative;
+  z-index: 3;
+}
+
+.services-heading {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+
+.card-overlap-wrapper {
+  position: relative;
+  top: -80px; /* Pull cards up into the banner */
+  z-index: 2;
+  padding: 0 40px;
+}
+
+/* Second Row White Background */
+.card-section {
+  background-color: white;
+  padding: 80px 40px 40px;
+  border-radius: 20px;
+  margin-top: -20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Common Card Style */
+.service-card {
+  background-color: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  height: 340px;
+  
+}
+.service-card h3{
+  color: white;
+}
+
+/* Second Row White Card Variant */
+.second-row-card {
+  background-color: black;
+  
+}
+
+.second-row-card h3 {
+  color: white;
+}
+
+.second-row-card p {
+  color: white;
+}
+
+/* Card Content */
+.service-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.service-card h3 {
+  font-size: 1.1rem;
+  margin: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  padding: 0 10px 15px;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+/* Hover Effect */
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .services-heading {
+    font-size: 2.5rem;
+  }
+
+  .service-card {
+    height: auto;
+  }
+
+  .service-card h3 {
+    font-size: 1rem;
+  }
+
+  .service-card p {
+    font-size: 0.85rem;
+  }
+}

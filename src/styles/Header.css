@@ -1,0 +1,26 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white; /* optional */
+  position: relative;
+  z-index: 10;
+  font-size: 50px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Optional: Responsive tweak */
+@media (max-width: 768px) {
+  .header-logo {
+    max-width: 100px;
+  }
+}
