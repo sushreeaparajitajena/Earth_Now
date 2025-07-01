@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/About.css";
-import plasmaVideo from "../assets/AboutPic/bg-video.mp4"; // ✅ import video
 import leader1 from "../assets/AboutPic/bnrao.avif";
 import leader2 from "../assets/AboutPic/ManojSamudra.avif";
 import Header from "./Header";
@@ -8,12 +7,16 @@ import Header from "./Header";
 const About = () => {
   return (
     <>
-      
       <section className="about-hero-section">
         <Header />
+
+        {/* Background Video Section */}
         <div className="about-hero-video">
           <video autoPlay muted loop playsInline className="video-bg">
-            <source src={plasmaVideo} type="video/mp4" />
+            <source
+              src="https://res.cloudinary.com/dkyfpnmqm/video/upload/v1751393968/bg-video_pwcdje.mp4"
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
           <div className="about-overlay">
@@ -37,7 +40,6 @@ const About = () => {
             Our goal is simple yet bold: to enable smarter decisions, reduce environmental harm, and create a more connected, sustainable world...
           </p>
         </div>
-
 
         {/* Leadership Section */}
         <div className="leader-section">
