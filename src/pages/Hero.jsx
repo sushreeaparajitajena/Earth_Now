@@ -5,7 +5,7 @@ import Header from "./Header"; // ✅ Import the Header component
 const Hero = () => {
   return (
     <div className="hero-container">
-      <Header /> {/* ✅ Add your full header with logo and MenuBar */}
+      <Header /> 
 
       <video className="background-video" autoPlay loop muted>
         <source
