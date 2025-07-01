@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/Hero.css";
-import bgVideo from "../assets/bg1.mp4";
 import Header from "./Header"; // ✅ Import the Header component
 
 const Hero = () => {
@@ -8,9 +7,11 @@ const Hero = () => {
     <div className="hero-container">
       <Header /> {/* ✅ Add your full header with logo and MenuBar */}
 
-      {/* Background Video */}
       <video className="background-video" autoPlay loop muted>
-        <source src={bgVideo} type="video/mp4" />
+        <source
+          src="https://drive.google.com/uc?export=download&id=1CLq0G0c1jo5yzF_Si5Nv4BzlXLqO43_w"
+          type="video/mp4"
+        />
         Your browser does not support the video tag.
       </video>
 
