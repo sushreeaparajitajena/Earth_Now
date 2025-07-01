@@ -1,15 +1,15 @@
 import React from "react";
 import "../styles/Hero.css";
-import Header from "./Header"; // ✅ Import the Header component
+import Header from "./Header";
 
 const Hero = () => {
   return (
     <div className="hero-container">
-      <Header /> 
+      <Header />
 
-      <video className="background-video" autoPlay loop muted>
+      <video className="background-video" autoPlay loop muted playsInline>
         <source
-          src="https://drive.google.com/uc?export=download&id=1CLq0G0c1jo5yzF_Si5Nv4BzlXLqO43_w"
+          src="https://res.cloudinary.com/dkyfpnmqm/video/upload/v1751392817/bg1_fmoliu.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
