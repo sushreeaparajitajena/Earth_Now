@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Service.css";
 import bgImg from "../assets/Service/service.jpg";
 
-import pic1 from "../assets/Service/pic1.jpg";
+import img1 from "../assets/Service/img1.jpg";
 import img2 from "../assets/Service/img2.jpg";
 import img3 from "../assets/Service/img3.jpg";
 import img4 from "../assets/Service/img4.jpg";
@@ -19,7 +19,7 @@ const services = [
   {
     title: "Innovations in Agro-Chemical Sector",
     description: "Pilot across 7 districts for precise stock management. Analysis in 2 districts for focused stock planning",
-    image: pic1,
+    image: img1,
   },
   {
     title: "Poplar Tree Monitoring",
